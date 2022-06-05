@@ -1,0 +1,28 @@
+;; problem file: vacuum_problem.pddl
+(define (problem cleanhouse)
+    (:domain vacuumbot)
+    (:objects kitchen bedroom studio entrance livingroom)
+    (:init 
+        (in-room livingroom)
+        (base livingroom)
+        (charge-high)
+        (door livingroom kitchen)
+        (door kitchen livingroom)
+        (door livingroom bedroom)
+        (door bedroom livingroom)
+        (door livingroom studio)
+        (door studio livingroom)
+        (door livingroom entrance)
+        (door entrance livingroom)
+    )
+    (:goal 
+        (and 
+        (cleaned livingroom)
+        (cleaned kitchen)
+        (cleaned bedroom)
+        (cleaned studio)
+        (cleaned entrance)
+        (charge-high)
+        )
+    )
+)
