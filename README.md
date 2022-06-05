@@ -187,3 +187,7 @@ PDDL file examples:
 ### **Log to file**
 
     .\log.bat
+
+## **Report**
+
+[Report](https://github.com/emiliantolo/smarthome-multi-agent/blob/master/report.pdf)
